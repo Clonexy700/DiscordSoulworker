@@ -8,7 +8,7 @@ class basic(commands.Cog):
     @commands.Cog.listener()
     async def on_ready(self):
         print(f'{self.client.user} has connected to Discord! I want to play a game!')
-        await self.client.change_presence(activity=discord.Game(name='$help'))
+        await self.client.change_presence(activity=discord.Game(name='l!help | Soulworker'))
 
     @commands.command(name='ping', help=' - shows my ping')
     async def ping(self, ctx):
